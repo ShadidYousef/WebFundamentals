@@ -1,0 +1,31 @@
+.container {
+    margin: 50px 500px
+}
+.pfp-header {
+    background-color: #17a2b8;
+    height: 130px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.pfp-image {
+    position: relative;
+    top: 60px;
+    left: 36px;
+   
+}
+.profile-text-box {
+    background-color: whitesmoke;
+    border: 2px solid #9a9a9a;
+    border-top-color: whitesmoke;
+    height: 250px;
+    padding-left: 30px;
+    padding-top: 25px;
+}
+.profile-text-box a {
+    text-decoration: none;
+}
+.profile-text-box .setting-icon {
+    color: tomato;
+    position: relative;
+    top: 4px;
+}

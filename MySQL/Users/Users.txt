@@ -1,0 +1,31 @@
+1. we create a table from the MySQL workbench
+2. we forward engineer it
+3. we open cmd and login "mysql -u root -p ****
+4. commands I used:
+//select schema
+use <database_name>;
+
+//create 3 new users
+insert into users (first_name, last_name, email, created_at, updated_at)
+values ("Muath", "Alrefai", "muath@gmail.com", now(), now()), ("Kareem", "Taha", "kareem@gmail.com", now(), now()), ("Yazan", "Kayed", "yazan@gmail.com", now(), now());
+
+//retrieve all from users
+select * from users;
+
+//retrieve first user using their email address
+select email from users where id=1;
+
+//Retrieve the last user using their id
+select * from users order by id desc limit 1;
+
+//Change the user with id=3 so their last name is Pancakes
+update users set last_name = "Pancakes" where id=3;
+
+//Delete the user with id=2 from the database
+delete from users where id=2;
+
+//Get all the users, sorted by their first name
+select * from users order by first_name; 
+
+//Get all the users, sorted by their first name in descending order
+select * from users order by first_name desc; 

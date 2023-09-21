@@ -1,0 +1,96 @@
+body {
+  background-color: black;
+  margin: 0px;
+}
+div.row div {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+div.brick {
+  background-color: blue;
+}
+div.coin {
+  background: url(assets/coin.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+div.cherry {
+  background: url(assets/cherry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+div.empty {
+}
+div#pacman {
+  background: url(assets/pacman.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+div.scoreText {
+  color: goldenrod;
+  padding: 5px;
+  position: absolute;
+  top: 10px;
+  left: 429px;
+  font-family: cursive;
+  font-size: larger;
+}
+div.points {
+  color: goldenrod;
+  padding: 5px;
+  position: absolute;
+  top: 100px;
+  left: 425px;
+  font-family: cursive;
+}
+div.cherryImg {
+  background-image: url(assets/cherry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 130px;
+  left: 425px;
+  padding: 10px;
+}
+div.cherryPoints {
+  position: absolute;
+  top: 125px;
+  left: 435px;
+  padding: 10px;
+  color: goldenrod;
+  font-size: smaller;
+}
+div.coinImg {
+  background-image: url(assets/coin.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 160px;
+  left: 425px;
+  width: 20px;
+  height: 20px;
+}
+div.coinPoints {
+  position: absolute;
+  top: 152px;
+  left: 435px;
+  padding: 10px;
+  color: goldenrod;
+  font-size: smaller;
+}
+div#score {
+  border: 5px dotted violet;
+  width: 40px;
+  height: 20px;
+  color: goldenrod;
+  padding: 5px;
+  text-align: center;
+  position: absolute;
+  top: 50px;
+  left: 430px;
+}

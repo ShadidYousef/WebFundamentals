@@ -1,0 +1,19 @@
+1. we create a table from the MySQL workbench
+2. we forward engineer it
+3. we open cmd and login "mysql -u root -p ****
+4. commands I used:
+//select schema
+use <database_name>;
+
+//fill into table
+insert into users (first_name, last_name, created_at, updated_at)
+values ("Muath", "Alrefai", now(), now()), ("Kareem", "Taha", now(), now()), ("Yazan", "Kayed", now(), now());
+
+//show table content
+select * from users; //to show the table content
+
+//delete everything from table
+delete from users;
+
+//update the table
+update users set first_name = "Mr. Muath" where id=7;

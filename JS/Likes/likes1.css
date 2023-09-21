@@ -1,0 +1,28 @@
+body {
+    padding: 0px 100px;
+    width:fit-content;
+    font-family: sans-serif;
+}
+.likesBox {
+    padding: 20px 30px;
+    border: 2px solid black;
+}
+.topLayer {
+    
+    display: flex;
+    align-items: center;
+}
+.topLayer h2 {
+    flex: 2;
+    margin: 0px auto;
+}
+.topLayer p, button {
+    flex: 1;
+    margin: 0px auto;
+}
+.topLayer button {
+    padding: 5px 10px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 2px 2px;
+}

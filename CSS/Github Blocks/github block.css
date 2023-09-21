@@ -1,0 +1,42 @@
+/* * { outline: 1px dotted red;} */
+
+body {
+    margin: 0px auto;
+}
+.container {
+    background-color: whitesmoke;
+    font-family: sans-serif;
+    padding: 150px;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 40px;
+}
+.footer {
+    text-align: center;
+}
+.top {
+    background-color: palegreen;
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+
+}
+.middle {
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bottom {
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.top, .middle, .bottom {
+    min-height: 150px;
+    margin: 20px;
+}
+div img {
+    margin: 20px;
+}

@@ -1,0 +1,9 @@
+- forked the repo
+- vs code terminal steps:
+git clone https://github.com/MuathAlrefai/git_demo
+cd git_demo
+git add .
+git commit -m "update html"
+git push
+- created a pull request
+end

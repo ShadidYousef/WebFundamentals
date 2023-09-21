@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    padding: 0px 300px;
+    margin: 0 auto;
+}
+.navbar {
+    background-color: #000000;
+    color: whitesmoke;
+    padding: 11px 30px;
+    margin: 0px;
+}
+.headerText {
+    text-align: center;
+}
+.content {
+    display: flex;
+
+}
+.contentLeft {
+    flex: 1;
+    border: 2px solid black;
+    height: fit-content;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 20px 5px;
+    
+}
+.contentRight {
+    flex: 3;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.likesBox {
+    padding: 20px 30px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+}
+.topLayer {
+    
+    display: flex;
+    align-items: center;
+}
+.topLayer h2 {
+    flex: 2;
+    margin: 0px auto;
+}
+.topLayer p, button {
+    flex: 1;
+    margin: 0px auto;
+}
+.topLayer button {
+    padding: 5px 10px;
+    background-color: yellow;
+    border: 2px solid black;
+    box-shadow: 2px 2px;
+}

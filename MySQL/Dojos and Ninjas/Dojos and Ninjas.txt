@@ -1,0 +1,50 @@
+1. we create a table from the MySQL workbench
+2. we forward engineer it
+3. we open cmd and login "mysql -u root -p ****
+4. commands I used:
+//select schema
+use <database_name>;
+
+//Create 3 new dojos
+insert into dojos (name)
+values ("Dojo_1"), ("Dojo_2"), ("Dojo_3");
+
+//Delete the 3 dojos you just created
+delete from dojos;
+
+//Create 3 more dojos
+insert into dojos (name)
+values ("Dojo_1"), ("Dojo_2"), ("Dojo_3");
+
+//Create 3 ninjas that belong to the first dojo
+insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+values ("ninja_1", "splinter_1", 25, now(), now(),4),
+	   ("ninja_2", "splinter_2", 26, now(), now(),4),
+       ("ninja_3", "splinter_3", 27, now(), now(),4);
+
+//Create 3 ninjas that belong to the second dojo
+insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+values ("ninja_1", "splinter_1", 25, now(), now(),5),
+	   ("ninja_2", "splinter_2", 26, now(), now(),5),
+       ("ninja_3", "splinter_3", 27, now(), now(),5);
+	   
+//Create 3 ninjas that belong to the third dojo
+insert into ninjas (first_name, last_name, age, created_at, updated_at, dojo_id)
+values ("ninja_1", "splinter_1", 25, now(), now(),6),
+	   ("ninja_2", "splinter_2", 26, now(), now(),6),
+       ("ninja_3", "splinter_3", 27, now(), now(),6);
+
+	   
+//Retrieve all the ninjas from the first dojo
+select * from dojos
+left join ninjas on dojos.id = ninjas.dojo_id
+where dojos.id = 4;
+
+//
+select * from dojos
+left join ninjas on dojos.id = ninjas.dojo_id
+where dojos.id = (select id from dojos order by id desc limit 1);
+
+//
+select * from dojos
+where dojos.id = (select dojo_id from ninjas order by dojo_id desc limit 1);

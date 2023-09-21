@@ -1,0 +1,14 @@
+created a repo on github manually
+created a local directory, created the files, and opened it in VS Code
+added some random content to the html and css files
+commands used:
+git init
+git remote add origin https://github.com/MuathAlrefai/basic_repo
+git add .
+git status //to make sure it worked
+git commit -m "initial commit"
+git push --set-upstream origin master //because I didnt make a branch so have to use this command to push to master branch
+//made some changes to the files
+git add .
+git commit -m "some changes"
+git push

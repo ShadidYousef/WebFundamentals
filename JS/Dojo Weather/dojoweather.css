@@ -1,0 +1,115 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+.navbar {
+  display: flex;
+  padding: 0px 350px;
+  background-color: rgb(159 197 248);
+  color: whitesmoke;
+}
+.navbar h1 {
+  flex: 2;
+  font-size: 40px;
+}
+.navbarRight {
+  display: flex;
+  justify-content: space-between;
+  flex: 2;
+}
+.navbarRight button {
+    border: none;
+    text-decoration: none;
+    background-color: rgb(159 197 248);
+    color: whitesmoke;
+    font-size: x-large;
+}
+.navbarRight button:hover {
+    background-color: violet;
+}
+.innerContainer {
+  width: 970px;
+  margin: auto;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header p,
+select {
+  font-size: x-large;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.today,
+.tomorrow,
+.friday,
+.saturday {
+  background-color: rgb(238 238 238);
+  margin: 0px 10px;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 4px;
+  
+}
+.today img,
+.tomorrow img,
+.friday img,
+.saturday img {
+    border-radius: 50%;
+    width: 150px;
+    height: auto;
+}
+.temperatureToday,
+.temperatureTomorrow,
+.temperatureFriday,
+.temperatureSaturday {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px;
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.hightemp {
+    color: rgb(207 42 39);
+}
+.lowtemp {
+    color: rgb(43 120 228);
+}
+.cookies {
+    /* position: fixed;
+    right: 485px;
+    left: 485px; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    background-color: rgb(238 238 238);
+    border: 3px solid black;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 2px 2px 7px;
+}
+.cookiesText {
+    width: 600px;
+    font-size: 17px;
+    
+}
+.cookiesText a {
+    color: rgb(12 85 149);
+}
+.cookies img {
+    width: 60px;
+    height: 60px
+}
+.acceptBtn {
+    background-color: rgb(159 197 248);
+    border-radius: 3px;
+    padding: 5px 15px;
+    border: 2px solid black;
+    box-shadow: 3px 3px;
+}
